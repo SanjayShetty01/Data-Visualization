@@ -35,6 +35,7 @@ chinaComPop$AgeGroup = factor(chinaComPop$AgeGroup)
 Levels = levels(chinaComPop$AgeGroup)
 chinaComPop$AgeGroup = factor(chinaComPop$AgeGroup, levels = sort(Levels))
 
+# Data Visualization 
 
 ggplot(chinaComPop, aes(x= date, y = population, fill = AgeGroup))+
   geom_area(position = "fill", size=1, colour="black")+
