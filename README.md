@@ -9,4 +9,3 @@ I'm doing this because visualization has always been my Achilles heel. Hence I w
 `R` folder contains all the codes in R. <br />
 `fig` folder contains all the picture in `png` format <br />
 
-
