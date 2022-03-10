@@ -1,8 +1,10 @@
 # Data Visualization
 <br />
 The main purposes of this repo are, <br />
-1. to motivate me to do one visualization per week <br />
-2. To share the same online. <br />
+
+- to motivate me to do one visualization per week <br />
+- To share the same online. <br />
+
 <br />
 I'm doing this because visualization has always been my Achilles heel. Hence I would also welcome critical feedback on the visualization. <br />
 <br />
