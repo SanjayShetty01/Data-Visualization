@@ -7,5 +7,5 @@ The main purposes of this repo are, <br />
 <br />
 I'm doing this because visualization has always been my Achilles heel. Hence I would also welcome critical feedback on the visualization. <br />
 <br />
-`R` folder contains all the codes in R. <br />
+<R> folder contains all the codes in R. <br />
 `fig` folder contains all the picture in `png` format <br />
