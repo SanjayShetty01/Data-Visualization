@@ -12,10 +12,10 @@ I'm doing this because visualization has always been my Achilles heel. Hence I w
 `fig` folder contains all the picture in `png` format 
  
  
- #### 1. Visualsation of Chineese Population [code](https://github.com/SanjayShetty01/Data-Visualization/blob/main/R/ChinaVisualization.R)
+ #### 1. Visualization of Chineese Population [code](https://github.com/SanjayShetty01/Data-Visualization/blob/main/R/ChinaVisualization.R)
 
 ![image1](https://github.com/SanjayShetty01/Data-Visualization/blob/main/fig/ChinaVisualization.png)
 
-#### 2. Visualsation of Indian Students Studying Aboard [code](https://github.com/SanjayShetty01/Data-Visualization/blob/main/R/visualizationOfStudentAboard.R)
+#### 2. Visualization of Indian Students Studying Aboard [code](https://github.com/SanjayShetty01/Data-Visualization/blob/main/R/visualizationOfStudentAboard.R)
 
 ![image2](https://github.com/SanjayShetty01/Data-Visualization/blob/main/fig/visualizationOfStudentAboard.png)
