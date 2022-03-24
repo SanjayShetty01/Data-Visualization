@@ -19,3 +19,9 @@ I'm doing this because visualization has always been my Achilles heel. Hence I w
 #### 2. Visualization of Indian Students Studying Aboard [code](https://github.com/SanjayShetty01/Data-Visualization/blob/main/R/visualizationOfStudentAboard.R)
 
 ![image2](https://github.com/SanjayShetty01/Data-Visualization/blob/main/fig/visualizationOfStudentAboard.png)
+
+#### 3. A Look into Proposition of Candidate Losing deposits from the Major Parties in the Lok Sabha Elections [code](https://github.com/SanjayShetty01/Data-Visualization/blob/main/R/ElectionDepositPlot.R)
+
+![image2](https://github.com/SanjayShetty01/Data-Visualization/blob/main/fig/ElectionDepositPlot.png)
+
+
