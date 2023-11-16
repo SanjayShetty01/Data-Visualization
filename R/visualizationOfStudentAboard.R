@@ -31,21 +31,12 @@ values
 # Since the data has `"` as its elements in the list hence we need to remove them. 
 values = values[lapply(values, length) > 2 ]
 
-# Creating region vector to store the region values. 
-region = c()
 
-for(i in 1:99){
-  region[i] = values[[i]][2]
-}
+region = sapply(values[1:99], \(x) x[2])
 
-# Creating NStudents vector to store the number of students values.
-NStudents = c()
-
-for(i in 1:99){
-  NStudents[i] = values[[i]][3]
-}
-
+NStudents = sapply(values[1:99], \(x) x[3])
 # Some values have commas hence we need to remove them to convert it to numeric form.
+
 NStudents = as.numeric(gsub(',', '', NStudents))
 
 df = data.frame(region, NStudents)
