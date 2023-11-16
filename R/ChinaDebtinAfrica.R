@@ -64,8 +64,8 @@ data_for_bar_vis$angle <- ifelse(angle < -90, angle + 180, angle)
 ymax = (base::ceiling(max(data_for_bar_vis$Total_loan)/10000) * 10000) * 10
 ymin = (-ymax*6/2 - 30000)
 
-ymax = 70000
-ymin =  -25000
+ymax = 180000
+ymin =  -250000
 
 africa_bar_chart <- ggplot(data_for_bar_vis, aes(x = as.factor(Country), 
                                                  y =Total_loan, 
@@ -92,7 +92,7 @@ africa_bar_chart <- ggplot(data_for_bar_vis, aes(x = as.factor(Country),
                         axis.text = element_blank(),
                         axis.title = element_blank(),
                         panel.grid = element_blank(),
-                        #plot.margin = unit(rep(1,4), "mm"),
+                        plot.margin = unit(rep(0.1,4), "mm"),
                         legend.position="top",
                         plot.background = element_rect(fill = "white", color = NA),
                         panel.background = element_rect(fill = "white", color = NA),
@@ -100,7 +100,7 @@ africa_bar_chart <- ggplot(data_for_bar_vis, aes(x = as.factor(Country),
 
 
 
-africa_bar_chart
+#africa_bar_chart
 #map_of_africa
 
 
@@ -110,5 +110,8 @@ final_plot <- africa_bar_chart + patchwork::inset_element(map_of_africa,
                                                           right = 0.7, 
                                                           top = 0.72)
 
-ggplot2::ggsave(plot = africa_bar_chart, filename = "plot.png", 
+ggplot2::ggsave(plot = final_plot, filename = "plot1.png", 
                 height = 10, width = 7, limitsize = F)
+
+#ggplot2::ggsave(plot = africa_bar_chart, filename = "plot.png", 
+#                height = 10, width = 7, limitsize = F)
