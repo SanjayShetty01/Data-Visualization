@@ -92,5 +92,6 @@ g <- ggplot2::ggplot(f1_data_for_viz, aes(x = as.factor(decade), y = wins,
 
   
 ggplot2::ggsave("fig/f1_constructor_total_win_decade.png", 
-                width = 10, height = 8, dpi = 300, units = "in")
+                width = 10, height = 8, dpi = 300, units = "in",
+                bg = "white")
 
