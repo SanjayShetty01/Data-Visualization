@@ -65,31 +65,32 @@ f1_data_for_viz$logo <- file.path(f1_logo_path,
 g <- ggplot2::ggplot(f1_data_for_viz, aes(x = as.factor(decade), y = wins, 
                                      fill = constructor)) +
   ggplot2::geom_bar(position="dodge", stat="identity") +
-  # ggplot2::geom_bar(stat = "identity", 
-  #                   position = position_dodge(width = 0.8)) +
   ggimage::geom_image(aes(image = logo),
-                      size = 0.05,
+                      size = 0.035,
                       by = "width",
-                      nudge_y = 5,
+                      nudge_y = 3,
                       position = position_dodge(width = 0.9)) +
   ggplot2::labs(x = "Decade", y = "Wins", fill = "Constructor",
-                title = glue::glue("<img src='{f1_logo_path}/f1_only_sym.png' width='20'/> Constructors' Wins by Decade"),
+                title = glue::glue("<img src='{f1_logo_path}/f1_only_sym.png' width='45'/> Constructors' Wins by Decade"),
                 subtitle = "Distribution of race victories across decades"
                 ) +
   ggplot2::scale_fill_manual(values = team_colors) +
   ggplot2::theme_minimal(base_size = 16, base_family = "oswald") +
   ggplot2::theme(
+    axis.text = element_text(size = rel(1.2)),
+    axis.title = element_text(size = rel(2)),
     panel.grid.major.x = element_blank(),
     legend.position = "bottom",
     legend.title = element_blank(),
     axis.title.x = element_blank(),
-    plot.title = element_markdown(lineheight = 1.5, hjust = 0.5, face = "bold"),
-    plot.subtitle = element_text(hjust = 0.5)
+    plot.title = element_markdown(lineheight = 1.5, hjust = 0.5, 
+                                  face = "bold", size = rel(3)),
+    plot.subtitle = element_text(hjust = 0.5, size = rel(2.5))
   ) +
   ggplot2::expand_limits(y = max(f1_data_for_viz$wins) + 10) +
   ggplot2::guides(fill = guide_legend(nrow = 1, byrow = TRUE))
 
   
+ggplot2::ggsave("fig/f1_constructor_total_win_decade.png", 
+                width = 10, height = 8, dpi = 300, units = "in")
 
-
-ggplot2::ggsave("plot.png", width = 10, height = 7)
