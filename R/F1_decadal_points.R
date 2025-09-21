@@ -26,7 +26,7 @@ WHERE r.position = 1;
 
 f1_data <- DBI::dbGetQuery(db_con, query)
 
-
+DBI::dbDisconnect(db_con)
 
 f1_data_for_viz <- f1_data %>%
   dplyr::filter(year < 2020) %>%
