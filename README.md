@@ -8,8 +8,8 @@ I'm doing this because visualization has always been my Achilles heel. Hence I w
  
 
  #### 1. Visualization of Distribution of race victories across decades [code](https://github.com/SanjayShetty01/Data-Visualization/blob/main/R/F1_decadal_points.R)
-
  ![image1](https://github.com/SanjayShetty01/Data-Visualization/blob/main/fig/f1_constructor_total_win_decade.png)
+
 
  #### 2. Visualization of Chineese Population [code](https://github.com/SanjayShetty01/Data-Visualization/blob/main/R/ChinaVisualization.R)
 
